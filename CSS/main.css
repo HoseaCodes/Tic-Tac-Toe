@@ -1,0 +1,36 @@
+/* Resetting the CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;  
+}
+
+body { 
+    font-family: Helvetica;
+
+}
+
+main {
+    text-align: center;
+}
+
+#gameboard {
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+    margin: 50px auto;
+
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: 700;
+    height: 200px;
+    width: 200px;
+}
+
+.left{ border-left: 3px solid black; }
+.right{ border-right: 3px solid black; }
+.bottom{ border-bottom: 3px solid black; }
