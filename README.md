@@ -24,7 +24,7 @@ ___________________________________________________________
 ## Getting Started
 ___________________________________________________________
 
-to open app in browser.
+[Click here](https://hosead6168.github.io/Tic-Tac-Toe/) to open app in browser.
 
 ___________________________________________________________
 ## Future Enhancements
