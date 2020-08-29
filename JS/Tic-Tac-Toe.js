@@ -69,7 +69,6 @@ function handleMove(evt) {
 
     // revisualizing the gameboard
     render();
-
 }
 
 function checkWinner(){
@@ -86,7 +85,7 @@ function checkWinner(){
 
     return 'T';
     // 1) Winner = Found matching combo in gameboard
-    // 2? Tie == All places taken, but no combo
+    // 2) Tie == All places taken, but no combo
     // 3) No combos and no tie game = keep playing .i.e. winner = false
 
 }
@@ -110,3 +109,19 @@ function checkWinner(){
         });
     }
 }) ();
+
+function drawLine(x0, y0, x1, y1, color) {
+    this.x0 = x0;
+    this.y0 = y0;
+    this.x1 = x1;
+    this.y1 = y1;
+    this.color = color;
+    this.draw = function() {
+        draw.line(this.x0, this.y0, this.x1, this.y1, this.color, 3);
+    }
+}
+
+var line = new Line(20, 20, 200, 200, 'red');
+line.draw();
+
+drawLine(20, 20, 200, 200, 'red');
